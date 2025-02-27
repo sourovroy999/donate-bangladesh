@@ -17,38 +17,45 @@
 
 <body>
   <main>
-    <div class="navbar bg-green-200">
-      <div class="navbar-start ml-16">
-        <button id="blog-page" class="btn bg-sky-300">Blog</button>
+    <!-- up section -->
+    <div class="sticky z-20 top-0 backdrop-blur-3xl ">
+
+      <div class="navbar  backdrop-blur-3xl bg-yellow-50">
+        <div class="navbar-start ml-16">
+          <button id="blog-page" class="btn bg-sky-300">Blog</button>
+
+        </div>
+        <div class="navbar-center gap-6 lg:flex">
+          <img src="assets/logo.png" alt="">
+          <h1 class="text-xl">Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end mr-16 gap-3">
+          <img src="assets/coin.png" alt="">
+          <p id="main-balance">5000 BDT</p>
+        </div>
+      </div>
+
+      <!-- button main -->
+      <div class="pt-12 ">
+
+        <div class="flex justify-center gap-4 ">
+          <button id="donation-btn-main" class="w-36 rounded-lg h-10 bg-lime-300 border-2 ">Donation</button>
+
+          <button id="history-btn-main" class="w-36 border-2 rounded-lg h-10  ">History</button>
+        </div>
 
       </div>
-      <div class="navbar-center gap-6 lg:flex">
-        <img src="assets/logo.png" alt="">
-        <h1 class="text-xl">Donate Bangladesh</h1>
-      </div>
-      <div class="navbar-end mr-16 gap-3">
-        <img src="assets/coin.png" alt="">
-        <p id="main-balance">5000 BDT</p>
-      </div>
+
+      <!-- divider -->
+      <div class="divider pt-4"></div>
+
     </div>
 
-    <!-- button main -->
-    <div class="mt-14 ">
-
-      <div class="flex justify-center gap-4 ">
-        <button id="donation-btn-main" class="btn bg-lime-300 hover:bg-lime-300">Donation</button>
-
-        <button id="history-btn-main" class="btn bg-white border-s-orange-200 ">History</button>
-      </div>
-
-    </div>
-
-    <div class="divider my-10"></div>
 
 
 
     <!-- content section start -->
-    <div  class="mx-24 gap-10  mt-7 m-auto flex flex-col justify-center">
+    <div id="content-section" class="mx-24  gap-10  mt-7 m-auto flex flex-col justify-center">
 
       <!-- first card -->
       <div class="hero bg-white border ">
@@ -65,7 +72,7 @@
               </div>
             </div>
 
-            <h1 class="text-xl font-bold">Donate for flood at Noakhali Bangladesh</h1>
+            <h1 id="donation-name-one" class="text-xl font-bold">Donate for flood at Noakhali Bangladesh</h1>
             <p class="py-6">
               The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
               help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
@@ -205,6 +212,11 @@
 
     </div>
 
+    <!-- history section -->
+    <div id="history-section" class="hidden">
+      <h1>HISTORY SECTION</h1>
+    </div>
+
 
 
 
@@ -213,12 +225,25 @@
 
   </main>
 
-  <footer class="bg-orange-100 h-20 mt-14">
+  <footer id="footer-section" class=" bg-orange-100 h-20 mt-14">
 
   </footer>
   <script src="JS/donate.js"></script>
   <script src="JS/utility.js"></script>
+  <script src="JS/features.js"></script>
   <script src="JS/blog.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+<div class=" border-2 w-10/12 p-4 mx-auto  my-4 h-12">
+  <p>fkepkepoker</p>
+</div> -->

@@ -11,9 +11,27 @@ function getInnerTextValueById(id){
     return innerValueNumber;
 }
 
+function getInnerTextByid(id){
+    const donationNameText=document.getElementById(id).innerHTML;
+}
 
 
+// function which hide all the content section
+function showAsectionById(id){
+    document.getElementById('content-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
 
+    
+    document.getElementById(id).classList.remove('hidden');
+
+}
+
+// common function for add donation history
+function addToHistorybyId(id){
+    const p= document.createElement ('p');
+    p.innerText= `${inputValueNumber} is donated to ${getInnerTextByid('donation-name-one')} `
+    
+}
 
 
 
@@ -50,3 +68,11 @@ function getInnerTextValueById(id){
 
 //     `
 // })
+
+
+
+
+// add colors to button
+// function addColorToBtn() {
+//     document.getElementById('')
+// }
