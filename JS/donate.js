@@ -39,7 +39,7 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
 
        var myDate = new Date(loc);
  
-    console.log(myDate.toLocaleString());
+      console.log(myDate.toLocaleString());
 
 
 
