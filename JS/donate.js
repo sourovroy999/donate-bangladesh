@@ -32,6 +32,9 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
 
+        // openModal
+        openModal('my_modal_1').showModal();
+
         // date time location
         const doo = new Date();
        let loc = d.toUTCString();
@@ -51,6 +54,8 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
         <div class=" border-2 w-10/12 p-4 mx-auto  my-4 h-16">
         <p>${donateAmount} TAKA is Donated for Flood at Noakhali, Bangladesh</p>
         </div>
+
+        
         
         `
         // inner html end
@@ -105,6 +110,8 @@ document.getElementById('donate-click-feni').addEventListener('click', function 
         document.getElementById('previous-ammount-feni').innerText = newAmmount + ' BDT';
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
+
+        openModal("my_modal_1").showModal();
 
         
         // sending to history section ***************
@@ -165,6 +172,9 @@ document.getElementById('donate-click-quota').addEventListener('click', function
         document.getElementById('previous-ammount-quota').innerText = newAmmount + ' BDT';
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
+
+        openModal("my_modal_1").showModal();
+
 
         
          // sending to history section ***************

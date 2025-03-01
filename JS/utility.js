@@ -35,6 +35,20 @@ function addToHistorybyId(id){
 
 
 
+function openModal(id){
+    document.getElementById(id).showModal();
+}
+
+
+// // modal button
+// const modal = document.querySelector('.modal');
+// const openModal= document.querySelector('.open-button');
+// const closeModal= document.querySelector('.close-button');
+
+// openModal.addEventListener('click', function(){
+//     modal.show();
+// })
+
 
 
 
