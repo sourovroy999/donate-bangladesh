@@ -39,6 +39,17 @@ function openModal(id){
     document.getElementById(id).showModal();
 }
 
+// function dateLocation(){
+//     const d = new Date();
+// let text = d.toLocaleTimeString()
+// }
+
+
+
+
+
+
+
 
 // // modal button
 // const modal = document.querySelector('.modal');

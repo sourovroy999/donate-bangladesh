@@ -16,6 +16,8 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
     console.log(donateAmount);
 
     const mainBalance = getInnerTextValueById('main-balance');
+
+
     if (isNaN(donateAmount)) {
         alert('Please Enter Donation Ammount');
         return;
@@ -32,17 +34,16 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
 
-        // openModal
-        openModal('my_modal_1').showModal();
+      
 
         // date time location
         const doo = new Date();
-       let loc = d.toUTCString();
+       let loc = doo.toUTCString();
        console.log(loc);
 
-       var myDate = new Date(loc);
+    //    var myDate = new Date(loc);
  
-      console.log(myDate.toLocaleString());
+    //   console.log(myDate.toLocaleString());
 
 
 
@@ -51,8 +52,13 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
 
         //   inner html start
         div.innerHTML = `
-        <div class=" border-2 w-10/12 p-4 mx-auto  my-4 h-16">
+        <div class=" border-2 w-10/12 p-4 mx-auto  my-8 ">
         <p>${donateAmount} TAKA is Donated for Flood at Noakhali, Bangladesh</p>
+        
+        <div id="utc-add-korbo" class="bg-gray-200 h-7 mt-2 px-3   py-0.5 ">
+        ${loc}
+        </div>
+
         </div>
 
         
@@ -64,7 +70,8 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
 
         // sending to history section end ***********
 
-
+         // openModal
+         openModal('my_modal_1').showModal();
 
 
         console.log(newAmmount);
@@ -95,6 +102,12 @@ document.getElementById('donate-click-feni').addEventListener('click', function 
     const donateAmountTwo = getInputFieldValueById('donate-feni-input');
 
     const mainBalance = getInnerTextValueById('main-balance');
+
+     // date time location
+     const doo = new Date();
+     let loc = doo.toUTCString();
+     console.log(loc);
+    
     if (isNaN(donateAmountTwo)) {
         alert('Please Enter Donation Ammount');
         return;
@@ -111,7 +124,6 @@ document.getElementById('donate-click-feni').addEventListener('click', function 
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
 
-        openModal("my_modal_1").showModal();
 
         
         // sending to history section ***************
@@ -119,16 +131,25 @@ document.getElementById('donate-click-feni').addEventListener('click', function 
 
         //   inner html start
         div.innerHTML = `
-        <div class=" border-2 w-10/12 p-4 mx-auto  my-4 h-16">
+        <div class=" border-2 w-10/12 p-4 mx-auto  my-8">
         <p>${donateAmountTwo} TAKA is Donated for Flood Relief in Feni,Bangladesh</p>
+        
+        <div  class="bg-gray-200 h-7 mt-2 px-3   py-0.5  ">
+        ${loc}
         </div>
+        
+        </div>
+
         
         `
         // inner html end
 
+        // add date and time
+
         document.getElementById('history-section').appendChild(div);
 
         // sending to history section end ***********
+        openModal("my_modal_1").showModal();
 
 
 
@@ -157,6 +178,14 @@ document.getElementById('donate-click-quota').addEventListener('click', function
     const donateAmountTwo = getInputFieldValueById('donate-quota-input');
 
     const mainBalance = getInnerTextValueById('main-balance');
+
+    // date time location
+    const doo = new Date();
+    let loc = doo.toUTCString();
+    console.log(loc);
+   
+
+
     if (isNaN(donateAmountTwo)) {
         alert('Please Enter Donation Ammount');
         return;
@@ -173,7 +202,6 @@ document.getElementById('donate-click-quota').addEventListener('click', function
 
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
 
-        openModal("my_modal_1").showModal();
 
 
         
@@ -181,17 +209,24 @@ document.getElementById('donate-click-quota').addEventListener('click', function
          const div = document.createElement('div');
 
          //   inner html start
-         div.innerHTML = `
-         <div class=" border-2 w-10/12 p-4 mx-auto  my-4 h-16">
-         <p>${donateAmountTwo} TAKA is Donated for Injured in the Quota Movement</p>
-         </div>
-         
-         `
-         // inner html end
+        div.innerHTML = `
+        <div class=" border-2 w-10/12 p-4 mx-auto  my-8">
+        <p>${donateAmountTwo} TAKA is Donated for Injured in the Quota Movement</p>
+        
+        <div  class="bg-gray-200 h-7 mt-2 px-3   py-0.5  ">
+        ${loc}
+        </div>
+        
+        </div>
+
+        
+        `
+        // inner html end
  
          document.getElementById('history-section').appendChild(div);
  
          // sending to history section end ***********
+         openModal("my_modal_1").showModal();
 
 
         console.log(newAmmount);
