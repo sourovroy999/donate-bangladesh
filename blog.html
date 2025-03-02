@@ -11,14 +11,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="max-w-screen-2xl mx-auto">
 
 
 
     <main >
 
         <!-- navbar -->
-        <div class="navbar bg-green-200">
+        <!-- <div class="navbar bg-green-200">
             <div class="navbar-start ml-16">
                 <button id="home-page" class="btn bg-lime-300">Home</button>
 
@@ -31,7 +31,27 @@
                 <img src="assets/coin.png" alt="">
                 <p id="main-balance">5000 BDT</p>
             </div>
-        </div>
+        </div> -->
+
+
+        <!-- same navbar -->
+
+        <nav class=" w-full flex justify-between items-center sm:py-0 sm:px-8  text-center md:py-2 bg-opacity-70  bg-green-200 ">
+            <div class="">
+                <button id="home-page" class="btn bg-lime-300">Home</button>
+              
+    
+            </div>
+            <div class=" sm:gap-4 sm:justify-center md:gap-6 flex items-center">
+              <img  src="assets/logo.png" alt="" height="40" width="40">
+              <h1 class="sm:text-base md:text-xl py-auto ">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center sm:gap-2 sm:pl-5 md:gap-3 ">
+              <img src="assets/coin.png" alt="" width="40px" height="40px">
+              <p id="main-balance" class="py-auto">5000 BDT</p>
+            </div>
+          </nav>
+         <!-- end -->
 
 
 

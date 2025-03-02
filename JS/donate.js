@@ -55,7 +55,7 @@ document.getElementById('donate-click-noakhali').addEventListener('click', funct
         <div class=" border-2 w-10/12 p-4 mx-auto  my-8 ">
         <p>${donateAmount} TAKA is Donated for Flood at Noakhali, Bangladesh</p>
         
-        <div id="utc-add-korbo" class="bg-gray-200 h-7 mt-2 px-3   py-0.5 ">
+        <div id="utc-add-korbo" class="bg-gray-200 mt-2 px-3   py-0.5 ">
         ${loc}
         </div>
 
@@ -134,7 +134,7 @@ document.getElementById('donate-click-feni').addEventListener('click', function 
         <div class=" border-2 w-10/12 p-4 mx-auto  my-8">
         <p>${donateAmountTwo} TAKA is Donated for Flood Relief in Feni,Bangladesh</p>
         
-        <div  class="bg-gray-200 h-7 mt-2 px-3   py-0.5  ">
+        <div  class="bg-gray-200 mt-2 px-3   py-0.5  ">
         ${loc}
         </div>
         
@@ -210,10 +210,10 @@ document.getElementById('donate-click-quota').addEventListener('click', function
 
          //   inner html start
         div.innerHTML = `
-        <div class=" border-2 w-10/12 p-4 mx-auto  my-8">
+        <div class=" border-2  w-10/12 p-4 mx-auto py-auto  my-auto">
         <p>${donateAmountTwo} TAKA is Donated for Injured in the Quota Movement</p>
         
-        <div  class="bg-gray-200 h-7 mt-2 px-3   py-0.5  ">
+        <div  class="bg-gray-200 mt-2  px-3   py-0.5  ">
         ${loc}
         </div>
         
