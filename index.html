@@ -20,12 +20,12 @@
     <!-- up section -->
     <div class="sticky z-20 top-0 bg-clip-padding backdrop-blur-3xl ">
 
-      <div class="navbar  bg-opacity-70  bg-green-200">
+      <!-- <div class="navbar  bg-opacity-70  bg-green-200 ">
         <div class="navbar-start ml-16">
-          <button id="blog-page" class="btn bg-lime-300">Blog</button>
+          <button id="blog-page" class="btn bg-lime-300 sm:-ml-10">Blog</button>
 
         </div>
-        <div class="navbar-center gap-6 lg:flex">
+        <div class="navbar-center gap-6 flex">
           <img src="assets/logo.png" alt="">
           <h1 class="text-xl">Donate Bangladesh</h1>
         </div>
@@ -33,10 +33,27 @@
           <img src="assets/coin.png" alt="">
           <p id="main-balance">5000 BDT</p>
         </div>
-      </div>
+      </div> -->
+      <nav class=" w-full flex justify-between items-center sm:py-0 sm:px-8  text-center md:py-2 bg-opacity-70  bg-green-200 ">
+        <div class="">
+          <button id="blog-page" class="btn bg-lime-300 ">Blog</button>
+
+        </div>
+        <div class=" sm:gap-4 sm:justify-center md:gap-6 flex items-center">
+          <img  src="assets/logo.png" alt="" height="40" width="40">
+          <h1 class="sm:text-base md:text-xl py-auto ">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center sm:gap-2 sm:pl-5 md:gap-3 ">
+          <img src="assets/coin.png" alt="" width="40px" height="40px">
+          <p id="main-balance" class="py-auto">5000 BDT</p>
+        </div>
+      </nav>
+
+
+
 
       <!-- button main -->
-      <div class="pt-12 ">
+      <div class="pt-4 md:pt-10">
 
         <div class="flex justify-center gap-4 ">
           <button id="donation-btn-main" class="w-36 rounded-lg h-10 bg-lime-300 border-2 ">Donation</button>
@@ -55,17 +72,17 @@
 
 
     <!-- content section start -->
-    <div id="content-section" class="mx-24  gap-10  mt-7 m-auto flex flex-col justify-center">
+    <div id="content-section" class="mx-2 md:mx-24 gap-10  mt-7  flex flex-col justify-center">
 
 
 
       <!-- first card -->
-      <div class="hero bg-white border ">
-        <div class="hero-content gap-16 flex-col lg:flex-row">
-          <img src="assets/noakhali.png" class="w-[50%] rounded-lg shadow-2xl lg: hover:" />
+      <div class="hero w-full bg-white border ">
+        <div class="hero-content gap-16 flex flex-col md:flex-row">
+          <img src="assets/noakhali.png" class="flex-1 rounded-lg shadow-2xl lg: hover:" />
 
           <!-- description flood -->
-          <div class=" sm:px-0 md:px-12  my-auto lg:px-0">
+          <div class="sm:px-0 md:px-12 md:flex-1 my-auto lg:px-0">
 
             <div class="stats mb-6 bg-zinc-100">
               <div class="stat  flex ">
@@ -84,8 +101,8 @@
             <input id="donate-noakhali-input" type="text" placeholder="Write Donation Amount"
               class="input input-bordered w-full " />
 
-            <button id="donate-click-noakhali" onclick="openModal()"
-              class="btn mt-6 btn-wide w-full bg-lime-300"> Donate </button>
+            <button id="donate-click-noakhali" onclick="openModal()" class="btn mt-6 btn-wide w-full bg-lime-300">
+              Donate </button>
 
             <dialog id="my_modal_1" class="modal">
               <div class="modal-box text-center my-4">
@@ -141,7 +158,7 @@
 
             <button id="donate-click-feni" onclick="openModal()"
               class="btn mt-6 btn-wide w-full bg-lime-300">Donate</button>
-            
+
 
 
           </div>
@@ -177,12 +194,12 @@
 
             <button id="donate-click-quota" onclick="openModal()"
               class="btn mt-6 btn-wide w-full bg-lime-300">Donate</button>
-           
+
           </div>
         </div>
       </div>
 
-    
+
 
 
     </div>
@@ -195,12 +212,6 @@
 
 
     </div>
-
-   
-
-
-
-
 
 
   </main>
@@ -215,12 +226,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
